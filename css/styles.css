@@ -768,11 +768,11 @@ img {
     transition-duration: var(--duration);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-}
+} */
 
 .modal {
     position: absolute;
