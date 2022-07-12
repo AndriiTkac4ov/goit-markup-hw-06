@@ -410,20 +410,27 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <form>
-                <b>Оставьте свои данные, мы вам перезвоним</b>
+            <button class="modal-button-close" type="button" data-modal-close>
+                <svg width="11" height="11" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-button-close">
+                    </use>
+                </svg>
+            </button>
+
+            <form class="main-form" name="main-form">
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
                 <div class="form-field">
                     <label class="form-label" for="name">Имя</label>
-                    <input class="form-input" type="text" name="name" id="name" autocomplete="name">
+                    <input class="form-input" type="text" name="name" id="name" autocomplete="name" placeholder=" ">
                 </div>
                 <div class="form-field">
                     <label class="form-label" for="tel">Телефон</label>
-                    <input class="form-input" type="tel" name="tel" id="tel" autocomplete="tel">
+                    <input class="form-input" type="tel" name="tel" id="tel" autocomplete="tel" placeholder=" ">
                 </div>
                 <div class="form-field">
                     <label class="form-label" for="mail">Почта</label>
-                    <input class="form-input" type="email" name="mail" id="mail" autocomplete="email">
+                    <input class="form-input" type="email" name="mail" id="mail" autocomplete="email" placeholder=" ">
                 </div>
                 <div class="form-field">
                     <label class="form-label" for="comment">Комментарий</label>
@@ -439,12 +446,7 @@
 
                 <button type="submit">Отправить</button>
             </form>
-            <button class="modal-button-close" type="button" data-modal-close>
-                <svg width="11" height="11" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-button-close">
-                    </use>
-                </svg>
-            </button>
+            
         </div>
     </div>
 
