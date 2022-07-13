@@ -418,23 +418,35 @@
             </button>
 
             <form class="main-form" name="main-form">
-                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
 
                 <div class="form-field">
                     <label class="form-label" for="name">Имя</label>
                     <input class="form-input" type="text" name="name" id="name" autocomplete="name" placeholder=" ">
+                    <svg class="form-input-icon" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-person">
+                        </use>
+                    </svg>
                 </div>
                 <div class="form-field">
                     <label class="form-label" for="tel">Телефон</label>
                     <input class="form-input" type="tel" name="tel" id="tel" autocomplete="tel" placeholder=" ">
+                    <svg class="form-input-icon" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-phone">
+                        </use>
+                    </svg>
                 </div>
                 <div class="form-field">
                     <label class="form-label" for="mail">Почта</label>
                     <input class="form-input" type="email" name="mail" id="mail" autocomplete="email" placeholder=" ">
+                    <svg class="form-input-icon" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-email">
+                        </use>
+                    </svg>
                 </div>
                 <div class="form-field">
                     <label class="form-label" for="comment">Комментарий</label>
-                    <textarea class="form-input" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                    <textarea class="textarea form-input" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
                 </div>
                 <div class="form-field">
                     <input class="form-input" type="checkbox" name="policy" id="policy">
@@ -444,7 +456,7 @@
                     </label>
                 </div>
 
-                <button class="button-submit" type="submit">Отправить</button>
+                <button class="form-button-submit" type="submit">Отправить</button>
             </form>
             
         </div>

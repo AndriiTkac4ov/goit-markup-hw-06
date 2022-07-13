@@ -19,8 +19,8 @@
     /* background colors */
     --primary-bcg-color: #FFFFFF;
     --hero-bcg-color: #2F303A;
-    --hero-button-color: #2196F3;
-    --hero-button-accent-color: #188CE8;
+    --button-color: #2196F3;
+    --button-accent-color: #188CE8;
     --activity-item-bcg-color: rgba(47, 48, 58, 0.8);
     --team-bcg-color: #F5F4FA;
     --team-members-bcg-color: #FFFFFF;
@@ -257,7 +257,7 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--hero-text-color);
-    background-color: var(--hero-button-color);
+    background-color: var(--button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
@@ -270,7 +270,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: var(--hero-button-accent-color);
+    background-color: var(--button-accent-color);
 }
 
 /* advantages */
@@ -817,6 +817,7 @@ img {
     cursor: pointer;
     }
 
+/* main form */
 .main-form {
     width: 528px;
     margin-left: auto;
@@ -825,6 +826,7 @@ img {
 }
 
 .form-title {
+    display: block;
     font-size: 20px;
     line-height: 1.15; 
     text-align: center;
@@ -855,4 +857,45 @@ img {
 
 .form-input::placeholder {
     color: var(--form-input-placeholder-color);
+}
+
+.form-input-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.textarea.form-input {
+    resize: none;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.form-button-submit {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin-left: 124px;
+    margin-right: 124px;
+    
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--hero-text-color);
+    background-color: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    
+    transition-property: background-color;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--duration);
+}
+
+.form-button-submit:hover,
+.form-button-submit:focus {
+    background-color: var(--button-accent-color);
 }
