@@ -418,10 +418,10 @@
             </button>
 
             <form class="main-form" name="main-form">
-                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
 
                 <div class="form-field">
-                    <label class="form-label" for="name">Имя</label>
+                    <label class="form-label" for="name">Ім'я</label>
                     <div class="form-field-inner">
                         <input class="form-input" type="text" name="name" id="name" autocomplete="name" placeholder=" ">
                         <svg class="form-input-icon" aria-hidden="true">
@@ -441,7 +441,7 @@
                     </div>
                 </div>
                 <div class="form-field">
-                    <label class="form-label" for="mail">Почта</label>
+                    <label class="form-label" for="mail">Пошта</label>
                     <div class="form-field-inner">
                         <input class="form-input" type="email" name="mail" id="mail" autocomplete="email" placeholder=" ">
                         <svg class="form-input-icon" aria-hidden="true">
@@ -450,21 +450,28 @@
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label class="form-label" for="comment">Комментарий</label>
-                    <textarea class="textarea form-input" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                <div class="textarea form-field">
+                    <label class="form-label" for="comment">Коментар</label>
+                    <textarea class="textarea form-input" name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
                 </div>
-                <div class="form-field">
-                    <input class="form-input" type="checkbox" name="policy" id="policy">
-                    <label class="form-label" for="policy">
-                        Соглашаюсь с рассылкой и принимаю
-                        <a href="#">Условия договора</a>
+                <div class="checkbox form-field">
+                    <input class="visually-hidden form-input" type="checkbox" name="policy" id="policy">
+                    <label class="checkbox form-label" for="policy">
+                        Погоджуюся з розсилкою та приймаю
+                        <a class="order-conditions-link" href="#">Умови договору</a>
+                        <svg class="icon-check-passive" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-check-passive">
+                            </use>
+                        </svg>
+                        <svg class="icon-check-active" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-check-active">
+                            </use>
+                        </svg>
                     </label>
                 </div>
 
-                <button class="form-button-submit" type="submit">Отправить</button>
+                <button class="form-button-submit" type="submit">Відправити</button>
             </form>
-            
         </div>
     </div>
 

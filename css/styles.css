@@ -887,13 +887,47 @@ img {
     transform: translateY(-50%);
 }
 
+/* textarea */
+.textarea.form-field {
+    margin-bottom: 20px;
+}
+
 .textarea.form-input {
     resize: none;
     height: 120px;
     padding: 12px 16px;
-    margin-bottom: 20px;
 }
 
+/* checkbox */
+.checkbox.form-field {
+    margin-left: 12px;
+    margin-bottom: 30px;
+}
+
+.checkbox.form-label {
+    position: relative;
+
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+}
+
+.order-conditions-link {
+    color: var(--accent-color);
+}
+
+.icon-check-passive,
+.icon-check-active {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+}
+
+/* button-submit */
 .form-button-submit {
     width: 200px;
     height: 50px;
