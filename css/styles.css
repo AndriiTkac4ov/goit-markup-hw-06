@@ -908,6 +908,7 @@ img {
     position: relative;
 
     margin-bottom: 0;
+    padding-left: 23.38px;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
@@ -925,6 +926,24 @@ img {
     transform: translateY(-50%);
     width: 16px;
     height: 15px;
+}
+
+.icon-check-passive {
+    fill: var(--title-text-color);
+    opacity: 1;
+}
+
+.icon-check-active {
+    background-color: var(--button-color);
+    opacity: 0;
+}
+
+.checkbox.form-field:checked + .icon-check-passive{
+    opacity: 0;
+}
+
+.checkbox.form-field:checked + .icon-check-active {
+    opacity: 1;
 }
 
 /* button-submit */
