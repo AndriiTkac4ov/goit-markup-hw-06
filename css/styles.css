@@ -999,9 +999,10 @@ fieldset {
 
 .checkbox-label {
     position: relative;
+    display: flex;
+    align-items: center;
 
     margin-bottom: 0;
-    padding-left: 23px;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
@@ -1014,10 +1015,7 @@ fieldset {
 
 .icon-check-passive,
 .icon-check-active {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-right: 7px;
     width: 16px;
     height: 15px;
 }
@@ -1032,6 +1030,11 @@ fieldset {
 }
 
 .icon-check-active {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
     background-color: var(--button-color);
     border-radius: 2px;
     opacity: 0;
@@ -1039,6 +1042,10 @@ fieldset {
     transition-property: opacity;
     transition-timing-function: var(--timing-function);
     transition-duration: var(--duration);
+}
+
+.check-order-conditions-link {
+    margin-left: 7px;
 }
 
 .checkbox-input:checked + .checkbox-label > .icon-check-passive{
