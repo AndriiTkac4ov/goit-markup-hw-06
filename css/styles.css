@@ -243,7 +243,7 @@ fieldset {
 }
 
 .hero-title {
-    width: 696px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -921,6 +921,10 @@ fieldset {
     color: var(--title-text-color);
 }
 
+.form-fieldset {
+    margin-bottom: 20px;
+}
+
 .form-field {
     display: flex;
     flex-direction: column;
@@ -981,7 +985,7 @@ fieldset {
 
 /* textarea */
 .textarea.form-field {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .textarea.form-input {
@@ -1024,7 +1028,7 @@ fieldset {
     fill: var(--title-text-color);
     opacity: 1;
 
-    transition-property: opacity;
+    transition-property: opacity, fill;
     transition-timing-function: var(--timing-function);
     transition-duration: var(--duration);
 }
@@ -1052,9 +1056,12 @@ fieldset {
     opacity: 0;
 }
 
-.checkbox-input:checked + .checkbox-label > .icon-check-active,
-.checkbox-input:focus-visible + .checkbox-label > .icon-check-active {
+.checkbox-input:checked + .checkbox-label > .icon-check-active {
     opacity: 1;
+}
+
+.checkbox-input:focus + .checkbox-label > .icon-check-passive {
+    fill: var(--accent-color);
 }
 
 /* button-submit */
